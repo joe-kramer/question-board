@@ -1,0 +1,13 @@
+<h2>More Information about {{model.author}}'s Quetion:</h2>
+<h4>Question:</h4><br>
+{{model.question}}<br>
+<h4>Additional Notes:</h4><br>
+{{model.notes}}<br>
+<h4>Answers:</h4>
+<ul>
+  {{#each model.question.answers as |answer|}}
+    {{answer-tile answer=answer}}<br>
+  {{/each}}
+</ul>
+
+{{new-answer saveAnswer="saveAnswer" question=model}}

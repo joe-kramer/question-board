@@ -1,5 +1,6 @@
 <li>
-  {{question.question}} - {{question.author}} - {{question.notes}}
+  {{#link-to 'question' question.id}}
+  {{question.question}} - {{question.author}}{{/link-to}}
   {{update-question question=question update="update"}}
   <hr>
 </li>
