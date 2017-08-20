@@ -1,50 +1,30 @@
+
+
+
 # question-board
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a question/answer board for developers to ask questions. It is programmed using the Angular2 framework
 
-## Prerequisites
+## Planning
 
-You will need the following things properly installed on your computer.
+1. Configuration/dependencies
+  * You will need to have node.js downloaded.
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
-* [Ember CLI](https://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+2. Specs
+  * Spec 1: Need to ask question, input: new question, output: display on index page
+  * Spec 2: Need to post answers to questions, input: answer, output: answer to specific question.
+  * Spec 3: Need to update question, input: updated question, output: new question
+  * Spec 4: Be able to go to question page, input: click on particular question, output: go to seperate page with that question
 
-## Installation
+3. Integration
+  * Initial routes or index pages with all dependencies in Controller/index.html head
+  * Template/html page for about page, routed to index.html body
+  * Template/html page for question page, used to display individual question
 
-* `git clone <repository-url>` this repository
-* `cd question-board`
-* `npm install`
+4. UX/UI
+  * Built with bootstrap
 
-## Running / Development
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+5. Polish
+  * Add stylesheet
+  * Add delete method
+  * Make README awesome
